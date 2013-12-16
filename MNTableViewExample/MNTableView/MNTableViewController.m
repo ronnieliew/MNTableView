@@ -66,7 +66,8 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    NSArray *cellConfigurationForSection = self.cellConfigurations[section];
+    return cellConfigurationForSection.count;
 }
 
 
